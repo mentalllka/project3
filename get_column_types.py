@@ -1,7 +1,7 @@
 def get_column_types(self, by_number=True) :
   
   try:
-    types = (}
+    types = {}
     for i, col_name in enumerate (self.header):
         column_values = [row[i] for row in self.datal
         if all(v.isdigit() for v in column_values):
