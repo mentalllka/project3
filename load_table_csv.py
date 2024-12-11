@@ -9,6 +9,6 @@ def load_table_csv(filepath):
             data = list(reader)
             return TableData(header, data)
     except FileNotFoundError:
-        raise FileNotFoundError(f"File not found: {filepath}")
+        raise FileNotFoundError(f"Файл не найден: {filepath}")
     except Exception as e:
-        raise Exception(f"Error loading CSV: {e}")
+        raise Exception(f"Ошибка загрузки CSV: {e}")
