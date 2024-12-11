@@ -3,7 +3,7 @@ def get_column_types(self, by_number=True) :
   try:
     types = {}
     for i, col_name in enumerate (self.header):
-        column_values = [row[i] for row in self.datal]
+        column_values = [row[i] for row in self.data]
         if all(v.isdigit() for v in column_values):
            col_type = int
         elif all(self._is_float(v) for v in column_values):
