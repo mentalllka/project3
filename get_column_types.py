@@ -15,4 +15,4 @@ def get_column_types(self, by_number=True) :
         types[i if by_number else col_name] = col_type
     return types
   except Exception as e:
-    raise Exception(f"Error in get_column_types: {e}")
+    raise Exception(f"Ошибка в get_column_types: {e}")
