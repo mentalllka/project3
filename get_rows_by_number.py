@@ -2,7 +2,7 @@ def get_rows_by_number (self, start, stop=None, copy_table=False):
     try:
       if stop is None:
           stop = start + 1
-      rows = self.data [start: stopl
+      rows = self.data [start: stop]
       if copy_table:
           return TableData(self.header, [row[:] for row in rows])
       return TableData(self.header, rows)
