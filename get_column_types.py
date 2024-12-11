@@ -12,7 +12,7 @@ def get_column_types(self, by_number=True) :
              col_type = bool
         else:
             col_type = str
-        types[i if by_number else col_name] = col_type
+        types[i if by_number else col_name] = col_type]
     return types
   except Exception as e:
     raise Exception(f"Ошибка в get_column_types: {e}")
