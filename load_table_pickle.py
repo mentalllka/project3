@@ -5,6 +5,6 @@ def load_table_pickle(filepath):
         with open(filepath, 'rb') as file:
             return pickle.load(file)
     except FileNotFoundError:
-        raise FileNotFoundError(f"File not found: {filepath}")
+        raise FileNotFoundError(f"Файл не найден: {filepath}")
     except Exception as e:
-        raise Exception(f"Error loading pickle: {e}")
+        raise Exception(f"Ошибака загрузки pickle: {e}")
