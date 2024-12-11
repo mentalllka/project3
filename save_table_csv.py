@@ -7,4 +7,4 @@ def save_table_csv(table, filepath):
             writer.writerow(table.header)
             writer.writerows(table.data)
     except Exception as e:
-        raise Exception(f"Error saving CSV: {e}")
+        raise Exception(f"Ошибка сохранения CSV: {e}")
