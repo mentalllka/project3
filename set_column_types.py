@@ -5,6 +5,6 @@ def set_column_types(self, types_dict, by_number=True):
             for row in self.data:
                 row[col_index] = col_type(row[col_index])
     except ValueError as e:
-        raise ValueError(f"Type conversion failed: {e}")
+        raise ValueError(f"Преобразование не удалось: {e}")
     except Exception as e:
-        raise Exception(f"Error in set_column_types: {e}")
+        raise Exception(f"Ошибка в set_column_types: {e}")
