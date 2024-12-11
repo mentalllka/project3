@@ -7,6 +7,6 @@ def get_rows_by_number (self, start, stop=None, copy_table=False):
           return TableData(self.header, [row[:] for row in rows])
       return TableData(self.header, rows)
 except IndexError:
-    raise IndexError"Invalid row index range specified.")
+    raise IndexError("Указан неверный диапазон индексов строк.")
 except Exception as e:
-    raise Exception(f"Error in get_rows_by_number: {e}")
+    raise Exception(f"Ошибка в get_rows_by_number: {e}")
