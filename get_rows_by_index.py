@@ -5,4 +5,4 @@ def get_rows_by_index(self, *values, copy_table=False):
            return TableData(self.header, [row[:] for row in rows])
        return TableData(self.header, rows)
     except Exception as e:
-       raise Exception(f"Error in get_rows_by_index: {e}")
+       raise Exception(f"Ошибка в get_rows_by_index: {e}")
